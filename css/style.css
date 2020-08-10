@@ -4,8 +4,13 @@
 body{
     font-family: Lato,'Source Sans Pro', 'Sans Serif';
 }
+nav a {
+    font-size: 18px;
+}
 main{
     margin-top: 100px;
+    margin-right:auto;
+    margin-left: auto;
 }
 .home h2{
     font-size: 40px;
@@ -24,6 +29,7 @@ img{
     width: 100%;
 }
 #sponser{
+    padding: 50px;
     margin-top: 50px;
     margin-bottom: 30px;
     width: 100vw;
@@ -45,6 +51,7 @@ hr{
     margin-bottom: 50px;
 }
 #about{
+    padding: 50px;
     width: 100vw;
 }
 #about h3{
@@ -52,10 +59,36 @@ hr{
     font-weight: lighter;
 }
 #about p{
-    font-size:16px;
+    font-size:18px;
+    font-weight: lighter;
     width: 348px;
 }
 #contact{
+    padding: 50px;
     display: grid;
     grid-template-columns : repeat(2,1fr);
+    
+}
+#contact h3{
+    font-size: 40px;
+}
+#contact p{
+    font-size: 18px;
+}
+.app {
+    padding: 50px;
+    display: grid;
+    grid-template-columns : repeat(2,1fr);
+    
+}
+.app .description{
+    font-size: 24px;
+    width: 600px;
+    height: 126px;
+}
+.button button {
+    font-family:'Source Sans Pro';
+    font-size: 18px;
+    width: 220px;
+    height: 100px;
 }
