@@ -59,8 +59,7 @@ hr{
     font-weight: lighter;
 }
 #about p{
-    font-size:18px;
-    font-weight: lighter;
+    font-size:17px;
     width: 348px;
 }
 #contact{
@@ -73,22 +72,33 @@ hr{
     font-size: 40px;
 }
 #contact p{
-    font-size: 18px;
+    font-size: 17px;
 }
 .app {
-    padding: 50px;
+    padding-top: 50px;
+    padding-bottom:50px;
     display: grid;
     grid-template-columns : repeat(2,1fr);
-    
+    place-items: center;
 }
 .app .description{
     font-size: 24px;
     width: 600px;
     height: 126px;
 }
-.button button {
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 112px;
+}
+.button a {
     font-family:'Source Sans Pro';
     font-size: 18px;
-    width: 220px;
-    height: 100px;
+    
+}
+footer{
+    padding: 10px;
+    font-size:17px;
 }
