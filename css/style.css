@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Lato,'Source Sans Pro', 'Sans Serif';
+}
+main{
+    margin-top: 100px;
+}
+.home h2{
+    font-size: 40px;
+    text-align: center;
+    font-weight: lighter;
+}
+.home p{
+    font-size: 16px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+img{
+    margin-top: 30px;
+    width: 100%;
+}
+#sponser{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 100px;
+}
+#sponsers img{
+    width: 100%;
+}
+.card h5{
+    font-size: 20px;
+    font-weight: 400;
+}
+/* .mercy h5{
+    transform: translateY(240px);
+} */
+hr{
+    margin-bottom: 50px;
+}
+#about{
+    width: 100vw;
+}
+#about h3{
+    font-size: 40px;
+    font-weight: lighter;
+}
+#about p{
+    font-size:16px;
+    width: 348px;
+}
