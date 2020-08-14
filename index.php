@@ -1,3 +1,4 @@
+<?php include('database.php');?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,6 +24,9 @@
                     <a href="#home" class="nav-link"> Home</a>
                   </li>
                   <li class="nav-item">
+                    <a href="#" class="nav-link"> App</a>
+                  </li>
+                  <li class="nav-item">
                     <a href="#sponsers" class="nav-link"> Sponsers</a>
                   </li>
                   <li class="nav-item">
@@ -31,9 +35,7 @@
                   <li class="nav-item">
                     <a href="#contact" class="nav-link"> Contact</a>
                   </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link"> App</a>
-                  </li>
+                  
                </ul>
              </div>
             </nav>
@@ -48,7 +50,16 @@
                 asperiores repellat corrupti, voluptatibus eius eum placeat atque.</p>
             <img src="./img/undraw_good_doggy_4wfq.svg" alt="good dog" class="img-responsive">
         </div>
-    
+        <hr class="clear">
+        <div class="app">
+            <div class="description">
+                <p>We want our users to use our app, because we believe 
+                    that we can create a safe place for the animals out there.</p>
+            </div>
+                <div class="button">
+                    <a href="./account.php" class="btn btn-dark btn-lg active" role="button">Create An Account</a>
+                </div>
+        </div>
     <hr class="clear">
     <h2 class="text-center" id="sponsers">Our Dear Sponsers !</h2>
 
@@ -101,16 +112,6 @@
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
             </form>
-        </div>
-        <hr class="clear">
-        <div class="app">
-            <div class="description">
-                <p>We want our users to use our upcoming up, because we believe 
-                    that we can create a safe place for the animals out there.</p>
-            </div>
-                <div class="button">
-                    <a href="/account.html" class="btn btn-dark btn-lg active" role="button">Create An Account</a>
-                </div>
         </div>
      </div>
     </main>

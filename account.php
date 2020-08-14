@@ -1,3 +1,4 @@
+<?php include('database.php');?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,27 +28,27 @@
             </div>
         </div>
         <div class="hr-sect">Or</div>
-        <form id="art" method="post" action="./database.php"novalidate>
+        <form id="art" method="post" action="./database.php" novalidate>
                 <div class="form-group">
                     <label for="firstname"> <h4>First Name </h4></label>
-                    <input type="text" class="form-control" placeholder="First Name" name="first name" id="firstname" onfocusout="validateFirstName()">
+                    <input type="text" class="form-control" placeholder="First Name" value="<?php echo $firstname; ?>" name="first name" id="firstname" onfocusout="validateFirstName()">
                     <span class="error-message"></span>
                 </div>
                 <div class="form-group">
                     <label for="lastname"><h4>Last Name</h4></label>
-                    <input type="text" class="form-control" Name="last name" placeholder="Last Name" id="lastname" onfocusout="validateLastName()">
+                    <input type="text" class="form-control" value="<?php echo $lastname; ?>" Name="last name" placeholder="Last Name" id="lastname" onfocusout="validateLastName()">
                     
                     <span class="error-message"></span>
                 </div>
                 <div class="form-group">
                     <label for="email"><h4>Email</h4> </label>
-                    <input type="email" class="form-control" placeholder="Email" id="email" name="email" onfocusout="validateEmail()">
+                    <input type="email" class="form-control" value="<?php echo $email; ?>" placeholder="Email" id="email" name="email" onfocusout="validateEmail()">
                     
                     <span class="error-message"></span>
                 </div>
                 <div class="form-group">
                     <label for="pwd"><h4>Password</h4> </label>
-                    <input type="password" class="form-control" placeholder="Password" id="pwd" name="password" onfocusout="validatePassword()" required/>
+                    <input type="password" value="<?php echo $password; ?>" class="form-control" placeholder="Password" id="pwd" name="password" onfocusout="validatePassword()" required/>
                     
                     <span class="error-message"></span>
                 </div>
@@ -79,11 +80,11 @@
                 <br>
                     <div class="lastform">
                         <p>By clicking this button, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</p>
-                        <button type="submit" class="btn btn-primary">Create a free account</button> </div>               
+                        <button name="register" type="submit" class="btn btn-primary">Create a free account</button> </div>               
             </div>
         </form>
         <div class="container">
-            <p id="login" class="text-center">Already have a <img class="img-circle img-responsive" src="./img/logo.png" alt="logo"><span style="color: #000">ART</span> account? <a href="#" class="link">Log in</a> </p>
+            <p id="login" class="text-center">Already have a <img class="img-circle img-responsive" src="./img/logo.png" alt="logo"><span style="color: #000">ART</span> account? <a href="./login.php" class="link">Log in</a> </p>
         </div>
     </div>
 </body>
