@@ -32,24 +32,24 @@
                 <?php include('./errors.php'); ?>
                 <div class="form-group">
                     <label for="firstname"> <h4>First Name </h4></label>
-                    <input type="text" class="form-control" placeholder="First Name" value="<?php echo $firstname;?>" name="firstname" id="firstname" onfocusout="validateFirstName()">
+                    <input type="text" class="form-control" placeholder="First Name" name="firstname" id="firstname" onfocusout="validateFirstName()">
                     <span class="error-message"></span>
                 </div>
                 <div class="form-group">
                     <label for="lastname"><h4>Last Name</h4></label>
-                    <input type="text" class="form-control" value="<?php echo $lastname;?>" Name="lastname" placeholder="Last Name" id="lastname" onfocusout="validateLastName()">
+                    <input type="text" class="form-control"  Name="lastname" placeholder="Last Name" id="lastname" onfocusout="validateLastName()">
                     
                     <span class="error-message"></span>
                 </div>
                 <div class="form-group">
                     <label for="email"><h4>Email</h4> </label>
-                    <input type="email" class="form-control" value="<?php echo $email;?>" placeholder="Email" id="email" name="email" onfocusout="validateEmail()">
+                    <input type="email" class="form-control" placeholder="Email" id="email" name="email" onfocusout="validateEmail()">
                     
                     <span class="error-message"></span>
                 </div>
                 <div class="form-group">
                     <label for="pwd"><h4>Password</h4> </label>
-                    <input type="password"  class="form-control" value="<?php echo $password;?>" placeholder="Password" id="pwd" name="password" onfocusout="validatePassword()" required/>
+                    <input type="password"  class="form-control" placeholder="Password" id="pwd" name="password" onfocusout="validatePassword()" required/>
                     
                     <span class="error-message"></span>
                 </div>

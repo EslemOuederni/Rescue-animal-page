@@ -12,7 +12,7 @@
     <head>
         <div class="container-fluid">
             <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-              <a href="#" class="navbar-brand">Tunisia's Animals</a>
+              <a href="#" class="navbar-brand"><img class=" navbar-logo img-circle img-responsive" src="./img/logo.png" alt="logo" style="width: 4%;transform: translateY(-15px);"> Animal Rescue Association Tunisia</a>
                 <!--button navbar lorsque l'ecran est petite-->
               <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" type="button">
                 <span class="navbar-toggler-icon"></span>
@@ -43,7 +43,7 @@
     <main>
        <div class="home container">
            <h2>
-            The first animal rescue website in Tunisia.
+            ARAT: The first animal rescue website in Tunisia.
            </h2>
            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Error eveniet sint quas temporibus maxime laboriosam amet quibusdam hic illum enim repudiandae qui
