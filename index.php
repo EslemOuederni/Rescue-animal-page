@@ -1,3 +1,4 @@
+<?php include('database.php');?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +12,7 @@
     <head>
         <div class="container-fluid">
             <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-              <a href="#" class="navbar-brand">Tunisia's Animals</a>
+              <a href="#" class="navbar-brand"><img class=" navbar-logo img-circle img-responsive" src="./img/logo.png" alt="logo" style="width: 4%;transform: translateY(-15px);"> Animal Rescue Association Tunisia</a>
                 <!--button navbar lorsque l'ecran est petite-->
               <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" type="button">
                 <span class="navbar-toggler-icon"></span>
@@ -23,6 +24,9 @@
                     <a href="#home" class="nav-link"> Home</a>
                   </li>
                   <li class="nav-item">
+                    <a href="#" class="nav-link"> App</a>
+                  </li>
+                  <li class="nav-item">
                     <a href="#sponsers" class="nav-link"> Sponsers</a>
                   </li>
                   <li class="nav-item">
@@ -31,9 +35,7 @@
                   <li class="nav-item">
                     <a href="#contact" class="nav-link"> Contact</a>
                   </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link"> App</a>
-                  </li>
+                  
                </ul>
              </div>
             </nav>
@@ -41,14 +43,23 @@
     <main>
        <div class="home container">
            <h2>
-            The first animal rescue website in Tunisia.
+            ARAT: The first animal rescue website in Tunisia.
            </h2>
            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Error eveniet sint quas temporibus maxime laboriosam amet quibusdam hic illum enim repudiandae qui
                 asperiores repellat corrupti, voluptatibus eius eum placeat atque.</p>
             <img src="./img/undraw_good_doggy_4wfq.svg" alt="good dog" class="img-responsive">
         </div>
-    
+        <hr class="clear">
+        <div class="app">
+            <div class="description">
+                <p>We want our users to use our app, because we believe 
+                    that we can create a safe place for the animals out there.</p>
+            </div>
+                <div class="button">
+                    <a href="./account.php" class="btn btn-dark btn-lg active" role="button">Create An Account</a>
+                </div>
+        </div>
     <hr class="clear">
     <h2 class="text-center" id="sponsers">Our Dear Sponsers !</h2>
 
@@ -101,16 +112,6 @@
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
             </form>
-        </div>
-        <hr class="clear">
-        <div class="app">
-            <div class="description">
-                <p>We want our users to use our upcoming up, because we believe 
-                    that we can create a safe place for the animals out there.</p>
-            </div>
-                <div class="button">
-                    <a href="/account.html" class="btn btn-dark btn-lg active" role="button">Create An Account</a>
-                </div>
         </div>
      </div>
     </main>
