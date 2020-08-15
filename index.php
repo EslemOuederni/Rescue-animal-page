@@ -57,7 +57,7 @@
                     that we can create a safe place for the animals out there.</p>
             </div>
                 <div class="button">
-                    <a href="./account.php" class="btn btn-dark btn-lg active" role="button">Create An Account</a>
+                    <a href="account.php" class="btn btn-dark btn-lg active" role="button">Create An Account</a>
                 </div>
         </div>
     <hr class="clear">

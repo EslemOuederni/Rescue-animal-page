@@ -85,7 +85,7 @@
             </div>
         </form>
         <div class="container">
-            <p id="login" class="text-center">Already have a <img class="img-circle img-responsive" src="./img/logo.png" alt="logo"><span style="color: #000">ARAT</span> account? <a href="./login.php" class="link">Log in</a> </p>
+            <p id="login" class="text-center">Already have a <img class="img-circle img-responsive" src="./img/logo.png" alt="logo"><span style="color: #000">ARAT</span> account? <a href="login.php" class="link">Log in</a> </p>
         </div>
     </div>
 </body>
