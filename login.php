@@ -46,9 +46,14 @@
                 
                 <br>
                     <div class="lastform">
-                        <button name="login" type="submit" class="btn btn-primary">Sign in</button> </div>               
+                        <button name="login" type="submit" class="btn btn-primary">Sign in</button> 
+                    </div> 
+                          
             </div>
         </form>
+        <div class="container">
+            <p id="login" class="text-center">Not a member of <img class="img-circle img-responsive" src="./img/logo.png" alt="logo"><span style="color: #000">ARAT</span> ? <a href="./account.php" class="link">create an account</a> </p>
+        </div>        
     </div>
 </body>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

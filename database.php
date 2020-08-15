@@ -1,19 +1,21 @@
 <?php
  
     session_start();
-    $db = mysqli_connect('localhost', 'root', '', 'registration');
-
+    // $dsn="mysql:host=localhost;dbname=registration";
+   
     $firstname = '';
     $lastname ="";
     $email="";
     $password="";
-    $id ="";
     $errors = array();
-    $update = false;       
+
+    $db =  mysqli_connect('localhost', 'root',
+    '', 'registration','3308');
+    
 
     if(isset($_POST['register'])){
-        $firstname = $_POST['first name'];
-        $lastname =$_POST['last name'];
+        $firstname = $_POST['First Name'];
+        $lastname =$_POST['Last Name'];
         $email = $_POST['email'];
         $password =$_POST['password'];
 
@@ -36,12 +38,16 @@
             $password = md5($password);
             $sql = "INSERT INTO users (first_name, last_name, email, password)
                             VALUES ('$firstname', '$lastname', '$email', '$password')";
+
             mysqli_query($db, $sql);
-            $_SESSION['firstname']= $firstname;
-            $_SESSION['success'] = "Tu es connecté";
-            header("Location: ./index.php");
+             $pdo_stmt=$pdo->prepare($sql);
+             $pdo_stmt->execute();
+
+             $_SESSION['firstname']= $firstname;
+             $_SESSION['success'] = "Tu es connecté";
+             header("Location: ./index.php");
         }
     }
     //deconnecter
-
+    
 ?>
