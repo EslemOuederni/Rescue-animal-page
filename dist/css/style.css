@@ -1,0 +1,222 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Interstate,Walsheim,sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+}
+nav a {
+    font-size: 18px;
+}
+.nav-logo{
+    width: 5%;
+
+}
+main{
+    margin-top: 100px;
+    margin-right:auto;
+    margin-left: auto;
+}
+.home h2{
+    font-size: 40px;
+    text-align: center;
+    font-weight: lighter;
+}
+.home p{
+    font-size: 16px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+img{
+    margin-top: 30px;
+    width: 100%;
+}
+#sponser{
+    padding: 50px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 100px;
+}
+#sponsers img{
+    width: 100%;
+}
+.card h5{
+    font-size: 20px;
+    font-weight: 400;
+}
+/* .mercy h5{
+    transform: translateY(240px);
+} */
+hr{
+    margin-bottom: 50px;
+}
+#about{
+    padding: 50px;
+    width: 100vw;
+}
+#about h3{
+    font-size: 40px;
+    font-weight: lighter;
+}
+#about p{
+    font-size:17px;
+    width: 348px;
+}
+#contact{
+    padding: 50px;
+    display: grid;
+    grid-template-columns : repeat(2,1fr);
+    
+}
+#contact h3{
+    font-size: 40px;
+}
+#contact p{
+    font-size: 17px;
+}
+.app {
+    padding-top: 50px;
+    padding-bottom:50px;
+    display: grid;
+    grid-template-columns : repeat(2,1fr);
+    place-items: center;
+}
+.app .description{
+    font-size: 24px;
+    width: 600px;
+    height: 126px;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 112px;
+}
+.button a {
+    font-family:'Source Sans Pro';
+    font-size: 18px;
+    
+}
+footer{
+    padding: 10px;
+    font-size:17px;
+}
+#account{
+    margin-top: 25px;
+    max-width: 42.5rem;
+    margin: 0 auto;
+}
+.logotitle{
+    display: flex;
+    justify-content: center;
+}
+.logo 
+{
+    width: 150px; 
+    border-radius: 50%;
+}
+#title{
+    margin-top: 100px;
+    font-size: 3.6rem;
+    letter-spacing: 0.1rem;
+}
+#socialmedia{
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    place-items: center;
+   
+}
+#socialmedia a{
+    text-decoration: none;
+}
+.col{
+    margin: 50px auto;
+
+}
+.fb {
+    background-color: #3B5998;
+    color: white;
+}
+.fb:hover{
+    color: #dd4b39;
+}
+.google {
+    background-color: #dd4b39;
+    color: white;
+}
+#art .form-group{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  
+    font-size: 18px;
+}
+#art p{
+    width: 180px;
+    font-size: 17px;
+}
+#art button{
+    font-size: 17.5px;
+    width: 200px;
+    height: 100px;
+}
+.lastform{
+    margin: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 50px;
+}
+.hr-sect {
+	display: flex;
+	flex-basis: 100%;
+	align-items: center;
+	color: rgba(0, 0, 0, 0.35);
+}
+.hr-sect::before,
+.hr-sect::after {
+	content: "";
+	flex-grow: 1;
+	background: rgba(0, 0, 0, 0.35);
+	height: 1px;
+    font-size: 0px;
+	line-height: 0px;
+	margin: 0px 8px;
+}
+.form-check-label{
+    font-size: 19px;
+}
+.container .img-circle{
+    width: 5%;
+    transform: translateY(-15px);
+}
+#login{
+    font-size: 22px;
+    font-weight: 200;
+    color: rgba(32, 30, 30, 0.651);
+}
+#art span{
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    color: #F44336;   
+    margin-top: 10px; 
+    font-style: italic;
+}
+#art input{
+    padding: 15px;
+}
+
+@media (max-width: 680px){
+    .col {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+      }
+}
